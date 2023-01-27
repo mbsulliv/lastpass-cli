@@ -48,7 +48,6 @@ unsigned int lastpass_iterations(const char *username)
 {
 	_cleanup_free_ char *reply = NULL;
 	_cleanup_free_ char *user_lower = NULL;
-	_cleanup_free_ char *path = NULL;
 	_cleanup_free_ char *iterationsbuf = NULL;
 
 	user_lower = xstrlower(username);
